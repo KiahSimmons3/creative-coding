@@ -1,0 +1,175 @@
+body {
+	text-align:center;
+}
+
+p {
+	letter-spacing: 5px;
+	word-spacing: 100px;
+    line-height: 250px;
+
+}
+
+
+.G {
+	background-color: antiquewhite;
+	color: darkslategray;
+	padding: 40px;
+	font-family: Arial;
+	line-height:200px;
+	font-size:60px;
+	font-weight:;
+}
+.i {
+	background-color: darkslateblue;
+	color: honeydew;
+	padding: 40px;
+	font-family: Papyrus;
+	line-height:60px;
+	font-size:86px;
+	font-weight:;
+}
+.v {
+	background-color: hotpink;
+	color: lavenderblush;
+	padding: 40px;
+	font-family: 'Courier New';
+	line-height:120px;
+	font-size:28px;
+	font-weight:;
+}
+.e {
+	background-color: lightseagreen;
+	color: lightpink;
+	padding: 40px;
+	font-family: Perpetua;
+	line-height:46px;
+	font-size:100px;
+	font-weight:;
+}
+
+.M {
+	background-color: maroon;
+	color: moccasin;
+	padding: 40px;
+	font-family: 'Lucida Bright';
+	line-height:68px;
+	font-size:64px;
+	font-weight:;
+}
+.e2 {
+	background-color: mistyrose;
+	color: midnightblue;
+	padding: 40px;
+	font-family: Impact;
+	line-height:92px;
+	font-size:90px;
+	font-weight:;
+}
+
+
+
+.M2 {
+	background-color: orange;
+	color: orangered;
+	padding: 40px;
+	font-family: 'Century Gothic';
+	line-height:44px;
+	font-size:40px;
+	font-weight:;
+}
+.o {
+	background-color: palegreen;
+	color: palevioletred;
+	padding: 40px;
+	font-family: 'Arial Black';
+	line-height:104px;
+	font-size:82px;
+	font-weight:;
+}
+.n {
+	background-color: rebeccapurple;
+	color: palegoldenrod;
+	padding:40px;
+	font-family: Copperplate;
+	line-height:86px;
+	font-size:38px;
+	font-weight:;
+}
+.e3 {
+	background-color: palevioletred;
+	color: steelblue;
+	padding: 40px;
+	font-family:;
+	line-height:38px;
+	font-size:86px;
+	font-weight:;
+}
+.y {
+	background-color: mediumvioletred;
+	color: oldlace;
+	padding: 40px; 
+	font-family: 'Brush Script MT';
+	line-height:96px;
+	font-size:152px;
+	font-weight:;
+}
+
+
+
+.O {
+	background-color: lightgoldenrodyellow;
+	color: orchid;
+	padding: 40px;
+	font-family: 'Big Caslon';
+	line-height:70px;
+	font-size:98px;
+	font-weight:;
+}
+.r {
+	background-color: peru;
+	color: slateblue;
+	padding: 40px;
+	font-family:'Didot';
+	line-height:14px;
+	font-size:50px;
+	font-weight:;
+}
+
+
+
+.E {
+	background-color: mediumpurple;
+	color: yellowgreen;
+	padding: 40px;
+	font-family:'Hoefler Text';
+	line-height:53px;
+	font-size:73px;
+	font-weight:;
+}
+.l {
+	background-color: rebeccapurple;
+	color: pink;
+	padding: 20px;
+	font-family: Baskerville;
+	line-height:44px;
+	font-size:66px;
+	font-weight:;
+}
+.s {
+	background-color: firebrick;
+	color: darkorange;
+	padding: 40px;
+	font-family: Rockwell;
+	line-height:124px;
+	font-size:116px;
+	font-weight:;
+}
+.e4 {
+	background-color: rosybrown;
+	color: navy;
+	padding: 40px;
+	font-family: Copperplate;
+	line-height:68px;
+	font-size:74px;
+	font-weight:;
+}
