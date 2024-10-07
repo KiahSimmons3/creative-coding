@@ -9,8 +9,6 @@ function setup() {
 function draw() {
   background(255);
 
-  let colors = ["#FBD26F", "#FF4B69", "#F28CFF"];
-
 
 translate(6,105);
 //17 x 17 grid
@@ -36,7 +34,7 @@ for (let x = 0; x < 17; x++){
     translate(randomX, randomY);
     strokeWeight(2);
     stroke(chosenColor);
-    fill(1, 1)
+    noFill()
     square(0, 0, randomSize);  // Random squares
     pop();
   }
