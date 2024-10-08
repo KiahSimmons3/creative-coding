@@ -3,28 +3,32 @@ function setup() {
   createCanvas(1200, 1200);
 
   // disable animation
-  noLoop();
+  //noLoop();
+  frameRate(1);
 }
 
 function draw() {
-  background(255); //white bg
+  background("#2e2c2c"); //white bg
   translate(100,100);
-for (let x = 0; x < 8; x++){
-   for (let y = 0; y < 8; y++){ //makes the grid 8x8 
+for (let x = 0; x < 9; x+=1.2){
+   for (let y = 0; y < 9; y+=1.2){ //makes the grid 8x8 
       push();
       translate(x * 105, y * 105); //105 pixels apart
 
       // random color and stroke
-      let r = random(255); 
-      let g = random(255);
-      let b = random(255);
-      fill(r, g, b);
-      strokeWeight(4); 
-      stroke(random(255), random(255), random(255));
+
+      let colors = ["#581845", "#900C3F", "#C70039", "#FF5733", "#FFC300", "#bdf6f3"];
+      let chosenColor = random(colors);
+      let colors2 = ["#581845", "#900C3F", "#C70039", "#FF5733", "#FFC300", "#bdf6f3"];
+      let chosenColor2 = random(colors2);
+     
+      fill(chosenColor);
+      strokeWeight(6); 
+      stroke(chosenColor2);
 
 
       let size = random(50, 100);
-      ellipse(0,0,100,100); //circle drawer
+      rect(0,0,100,100); //circle drawer
       pop();
      }
    }
