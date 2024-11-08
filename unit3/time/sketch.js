@@ -1,3 +1,5 @@
+//the code removes a flower every minuite (there are 60 flowers) like a countdown to an hour
+
 let flowers = [];
 let numFlowers = 60;
 let timeElapsed = 0;
