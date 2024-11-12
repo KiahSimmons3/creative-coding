@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<!--
+
+Through the Park
+Copyright (c) 2008, 2019 Nick Montfort <nickm@nickm.com>
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved. This file is offered as-is,
+without any warranty.
+
+-->
+<style>
+/* <![CDATA[ */
+body {
+ background: #35839c;
+ color: #000;
+ margin: 24pt 24pt 0 24pt;
+ font-family: "Helvetica Neue", Helvetica, Arial, Nimbus Sans, Verdana, sans-serif;
+ font-size: 13pt;
+}
+div {
+ height: 16pt;
+}
+a {
+ color: #117;
+ text-decoration: none;
+}
+/* ]]> */
+</style>
+<script>
+var sentences=[
+"The woman adjusts her hat against the wind",
+"She steps toward the water, then stops",
+"The woman sets off through the beach",
+"Seagulls swoop low, calling out in laughter",
+"The woman turns to smile and wink",
+"The muscular man paces the woman",
+"A wave crashes and foams along the shore",
+"The man raises a hand, as if in greeting",
+"The woman's heart races, though she isn’t sure why",
+"A snatch of song reminds the woman of her grandmother",
+"The man and woman exchange a knowing glance",
+"She lowers her hand, feeling a pang of doubt",
+"The tide pulls and recedes, marking time",
+"Someone calls a name—it could be hers, it could be his",
+"The man's breathing quickens",
+"The woman smiles, a secret shared with the sea",
+"The man dashes, leaving pretense behind",
+"Seagulls scatter",
+"The girl runs",
+"The man's there first",
+"Things are forgotten in carelessness",
+"She turns, her footprints washed away by the tide",
+"The crowd shifts and flows like water",
+"The man’s shadow stretches long beside her",
+"The waves roll in, steady and endless, under the darkening sky"
+];
+var to_drop = 2 * sentences.length / 3;
+var n = 0;
+var text = ""
+function rand_range(max) {
+ return Math.floor(Math.random()*(max+1));
+}
+function drop(array) {
+ var to_remove = rand_range(array.length-1);
+ while (array[to_remove].length == 0) {
+  to_remove = rand_range(array.length-1);
+ }
+ array[to_remove] = '';
+ return array;
+}
+function story() {
+ var main=document.getElementById('main');
+ for (n=0; n<to_drop; n++) {
+  sentences = drop(sentences);
+ }
+ for (n=0; n<sentences.length; n++) {
+  if (sentences[n].length > 0) {
+   text += sentences[n] + ". ... "
+   }
+  }
+ last=document.createElement('div');
+ last.appendChild(document.createTextNode(text));
+ main.appendChild(last);
+}
+</script>
+  <title>Through the Seaside</title>
+</head>
+<body onload="story();">
+<div style="float:right; color:#711; width:250px; font-style:italic">
+<p>Text &amp; Code: <a href="http://nickm.com">Nick Montfort (Text edited by Kiah Simmons)</a></p>
+<p>This page, using a very simple bit of JavaScript, generates different stories by omitting different sentences from a prepared list at random each time. <a href="through_the_park.html">Reload</a> for a different story. This process was implemented first in Python: <a href="through_the_park.py">through_the_park.py</a></p>
+<p><a href="por_el_parque.html">Español</a> &middot; <a href="przez_park.html">Polski</a> &middot; <a href="cherez_park.html">Русский</a></p></div>
+<div style="height:60pt; font-size:26pt">Through the Seaside</div>
+<div id="main" style="font-weight:bold; width:50%"></div>
+</body>
+</html>
