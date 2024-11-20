@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     
-    <!-- RiTa library: -->
+    <!-- RiTa library -->
     <script src="https://unpkg.com/rita@2.8.31/dist/rita.js"></script>
 
     <title>Love, Markov</title> 
@@ -15,35 +15,45 @@
 
     <style type="text/css">
         body {
-            background-color:#334433;
+            background-color: #334433;
+            color: #222;
+            font-family: Arial, sans-serif;
         }
         main {
             width: 100%;
-            display:none;
+            display: none;
         }
         canvas {
-            display:block;
+            display: block;
             margin: 0 auto;
         }
-        #letter{
-            width:600px;
-            padding:2em;
-            background-color:#ccc;
-            margin-top:2em;
-            margin-left:2em;
+        #letter {
+            width: 600px;
+            padding: 2em;
+            background-color: #ccc;
+            margin-top: 2em;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        #source {
+            display: none;
         }
     </style>
 
 </head>
 <body>
-  <div id="letter">
-
-    </div>  
- 
-    <div id="source" style="display:none">
-
-
+    <div id="letter"></div>
+    
+    <div id="source">
+        <!-- Add your source text here -->
+        It was the best of times, it was the worst of times, it was the age of wisdom, 
+        it was the age of foolishness, it was the epoch of belief, it was the epoch of 
+        incredulity, it was the season of Light, it was the season of Darkness, it was 
+        the spring of hope, it was the winter of despair.
     </div>
-       <script src="sketch.js"></script>
+    
+    <script src="sketch.js"></script>
 </body>
-</html> 
+</html>
