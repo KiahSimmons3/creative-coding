@@ -1,0 +1,49 @@
+/* Center everything */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f8ff; /* Light blue background */
+}
+
+/* The yellow face */
+#face {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  border-radius: 50%; /* Makes it a circle */
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow */
+}
+
+/* Eyes */
+.eye {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 50%; /* Circle eyes */
+  position: absolute;
+  top: 40px; /* Move eyes down */
+}
+
+#left-eye {
+  left: 40px; /* Move left eye */
+}
+
+#right-eye {
+  right: 40px; /* Move right eye */
+}
+
+/* Mouth */
+#mouth {
+  width: 60px;
+  height: 20px;
+  background-color: black;
+  border-radius: 10px / 5px; /* Curved rectangle (smile) */
+  position: absolute;
+  bottom: 30px; /* Move mouth down */
+  left: 50%; /* Center the mouth */
+  transform: translateX(-50%); /* Keep it centered */
+}
