@@ -18,8 +18,8 @@ let lastMinute = -1; // Track the last minute to detect changes
 function setup() {
   createCanvas(800, 600);
   noStroke();
-  initializeTrees();  // Initialize the trees initially
-  initializeFireflies();  // Initialize the fireflies initially
+  initializeTrees();  // Initialize the trees 
+  initializeFireflies();  // Initialize the fireflies
   moonX = 0; // Start the moon on the left side of the screen
 }
 
