@@ -5,48 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Gallery</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1d2935;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
         .image-container {
             text-align: center;
-            margin-bottom: 20px;
+            margin: 20px;
+            flex: 1 1 300px;
+            max-width: 400px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         img {
-            width: 100%; /* Adjust size as needed */
-            max-width: 300px; /* Limit maximum width */
+            width: 100%; /* Make the image fill its container */
             height: auto;
+            border-radius: 10px;
+            border: 5px solid black; /* Black border around the image */
         }
         .link {
             display: block;
-            margin-bottom: 10px;
-            font-size: 18px;
+            margin-bottom: 15px;
+            font-size: 24px; /* Larger font for the link */
+            font-weight: bold;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
         }
         .text {
-            font-size: 16px;
+            font-size: 18px; /* Larger font for text */
+            color: #333;
+            line-height: 1.6;
         }
     </style>
 </head>
 <body>
     <div class="image-container">
-        <a href="https://www.example1.com" class="link">Link 1</a>
+        <a href="https://kiahsimmons3.github.io/creative-coding/unit3/3.x.screen-saver/" class="link">Jellyfish Screensaver</a>
         <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/92603943_87qMf9H3tFRcPX2.png" alt="Image 1">
-        <p class="text">This is the text under image 1.</p>
+        <p class="text">This project is a jellyfish floating around the ocean! I added bubbles to keep it company too!</p>
     </div>
 
     <div class="image-container">
-        <a href="https://www.example2.com" class="link">Link 2</a>
-        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/92603981_VZSB2UTNWoZXUB7.png" alt="Image 2">
-        <p class="text">This is the text under image 2.</p>
+        <a href="https://kiahsimmons3.github.io/creative-coding/unit3/3.2.follower/" class="link">Fishy follower</a>
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/92603981_VZSB2UTNWoZXUB7.png" alt="Fishy follower">
+        <p class="text">This is a follower game where you have to avoid letting the fish touch the mouse! collecting the yellow circle gets you points, but if the fish touch you, you lose a point! Be careful!</p>
     </div>
 
     <div class="image-container">
-        <a href="https://www.example3.com" class="link">Link 3</a>
-        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/92603957_vU3tv8V4BngOWCU.png" alt="Image 3">
-        <p class="text">This is the text under image 3.</p>
+        <a href="https://kiahsimmons3.github.io/creative-coding/unit3/3.1.bounce/" class="link">Ball pit</a>
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/92603957_vU3tv8V4BngOWCU.png" alt="Ball pit">
+        <p class="text">This one just looks like a ball pit... Not much else to say! very retro!</p>
     </div>
 
     <div class="image-container">
-        <a href="https://www.example4.com" class="link">Link 4</a>
-        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/92603968_fbBAAZ8wQcs9N1j.png" alt="Image 4">
-        <p class="text">This is the text under image 4.</p>
+        <a href="https://kiahsimmons3.github.io/creative-coding/unit3/eyeballs/" class="link">Spider eyes</a>
+        <img src="https://f2.toyhou.se/file/f2-toyhou-se/images/92603968_fbBAAZ8wQcs9N1j.png" alt="Spider eyes">
+        <p class="text">This is a spider watching your mouse veeeery closely! Put the mouse over it's eyes and it'll shut its eye!</p>
     </div>
 </body>
 </html>
