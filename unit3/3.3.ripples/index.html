@@ -1,34 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="utf-8">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <title>Ripples with Audio</title>
+  </head>
+  <body>
+    <!-- Button to start the audio -->
+    <button id="playButton" style="font-size: 16px; padding: 10px; margin: 20px;">
+      Play Audio
+    </button>
+
+    <!-- YouTube iframe for audio (initially hidden) -->
+    <iframe 
+      id="audio" 
+      width="0" 
+      height="0" 
+      src="https://www.youtube.com/embed/RmrVwqbYbFU?autoplay=1&loop=1&playlist=RmrVwqbYbFU" 
+      frameborder="0" 
+      allow="autoplay" 
+      allowfullscreen
+      style="display: none;">
+    </iframe>
     
-
-
-    <title>Ripples</title> 
-    <!--
-        Use this page to complete the "Ripples" exercise:
-        https://canvas.umw.edu/courses/1499064/assignments/11895973
-    -->  
-
-    <style type="text/css">
-        body {
-            background-color:#333355;
-        }
-        main {
-            width: 100%;
-        }
-        canvas {
-            display:block;
-            margin: 0 auto;
-        }
-    </style>
-
-</head>
-<body>
-    <main>
-    </main>
+    <!-- Include your sketch -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
     <script src="sketch.js"></script>
-</body>
-</html> 
+
+    <script>
+      const playButton = document.getElementById('playButton');
+      const audioIframe = document.getElementById('audio');
+
+      playButton.addEventListener('click', () => {
+        audioIframe.style.display = 'block'; // Make the iframe active
+        playButton.style.display = 'none'; // Hide the button after clicking
+      });
+    </script>
+  </body>
+</html>
